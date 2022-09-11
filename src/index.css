@@ -1,13 +1,74 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+h1,
+h3,
+p {
+  font-family: Lato;
+}
+body{
+  margin: 0px;
+ 
+}
+.App{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+h1{
+  margin: 0px;
+  width: 100%;
+  text-align: center;
+  border-bottom: dotted 5px black;
+}
+h3{
+  background-color: white;
+  padding: 2px 4px;
+  border: 2px solid forestgreen;
+  border-radius: 3px;
+  margin-top: 4px;
+  margin-bottom: 15px;
+}
+.inputFilter{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  padding: 10px 0px;
+  background-color: forestgreen;
+}
+ul {
+  list-style: none;
+  
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+input {
+  width: 300px;
+  border: solid 1px gray;
+  border-radius: 3px;
+  padding: 2px 2px;
+  margin-top: 8px;
+  margin-bottom: 3px;
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  
+}
+.card{
+  width: 300px;
+  display: flex;
+  border: double 5px black;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("https://media.istockphoto.com/vectors/animal-paw-seamless-pattern-stock-illustration-vector-id1189999060?k=20&m=1189999060&s=612x612&w=0&h=Kx5ZOgafd0Q5bt0_GQ42jba1RpIYFzhBHsXuODzsDWQ=");
+  margin-bottom: 15px;
+}
+p{
+  color: white;
+  margin: 0px;
+}
+span{
+  font-size: 8px;
 }

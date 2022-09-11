@@ -1,23 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import MiApi from "./componentes/MiApi";
+
 
 function App() {
+  const [habitat, setHabitat] = useState("");
+  const [type, setType] = useState("");
+  const [sort, setSort] = useState("");
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Animal List</h1>
+      <div className="inputFilter">
+          <p>Enter their habitat</p>
+          <p><span>(Write with capital lleter)</span></p>
+          <input className="input"
+            onChange={(e) => setHabitat(e.target.value)}
+            placeholder="Desert,Rivers,Forest..."
+          /> 
+          <p>Enter the type of animal</p>
+          <p><span>(Write with capital lleter)</span></p>
+          <input className="input"
+            onChange={(e) => setType(e.target.value)}
+            placeholder="Reptile,Mammal,Bird..."
+          />
+        
+      </div>
+
+      <MiApi sort={sort} habitat={habitat} type={type} />
     </div>
   );
 }
